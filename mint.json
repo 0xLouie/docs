@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "name": "Prediqt",
-  "theme": "venus",
+  "theme": "prism",
   "favicon": "/favicon.svg",
   "colors": {
     "primary": "#299EFF",
@@ -15,6 +15,10 @@
   "topbarCtaButton": {
     "name": "Launch App",
     "url": "https://prediqt.market"
+  },
+  "logo": {
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg"
   },
   "topbarLinks": [
     {
