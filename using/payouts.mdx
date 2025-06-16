@@ -1,0 +1,270 @@
+---
+title: 'Payouts'
+description: 'How winnings are calculated and distributed on Prediqtmarket'
+icon: 'money-bill-wave'
+---
+
+## Understanding Payouts
+
+Prediqtmarket uses a simple yet powerful payout mechanism: winning shares always pay exactly **$1.00** each, while losing shares become worthless.
+
+<Note>
+  Payouts are automatic and instant. As soon as a market resolves, smart contracts process all winning positions without any manual intervention needed.
+</Note>
+
+## The Binary Payout System
+
+<CardGroup cols={2}>
+  <Card title="Winning Shares = $1.00" icon="check-circle" color="#299EFF">
+    Every winning share pays out exactly $1.00, regardless of purchase price
+  </Card>
+  <Card title="Losing Shares = $0.00" icon="x-circle" color="#299EFF">
+    Losing shares expire worthless when the market resolves
+  </Card>
+</CardGroup>
+
+## Payout Calculation
+
+### Basic Formula
+
+```
+Payout = Number of Winning Shares × $1.00
+Profit = Payout - Initial Investment
+ROI = (Profit / Initial Investment) × 100%
+```
+
+### Example Calculations
+
+<Tabs>
+  <Tab title="Example 1: Small Win">
+    **Market:** "Will Team A win tonight?"
+    **Your bet:** 100 YES shares at $0.65 each
+    **Cost:** $65
+    **Outcome:** Team A wins ✓
+    
+    **Payout:** 100 × $1.00 = $100
+    **Profit:** $100 - $65 = $35
+    **ROI:** 53.8%
+  </Tab>
+  <Tab title="Example 2: Large Win">
+    **Market:** "Will Bitcoin hit $50k this month?"
+    **Your bet:** 1,000 NO shares at $0.25 each
+    **Cost:** $250
+    **Outcome:** Bitcoin stays below $50k ✓
+    
+    **Payout:** 1,000 × $1.00 = $1,000
+    **Profit:** $1,000 - $250 = $750
+    **ROI:** 300%
+  </Tab>
+  <Tab title="Example 3: Loss">
+    **Market:** "Will X announce partnership?"
+    **Your bet:** 500 YES shares at $0.80 each
+    **Cost:** $400
+    **Outcome:** No announcement ✗
+    
+    **Payout:** $0
+    **Loss:** $400
+    **ROI:** -100%
+  </Tab>
+</Tabs>
+
+## $PREDIQT Bonus Multipliers
+
+When betting with $PREDIQT, tier-based multipliers boost your winnings:
+
+| Tier | Multiplier | Example on $100 Win |
+|------|------------|---------------------|
+| **No Tier** | 1.0x | $100 |
+| **Bronze** | 1.1x | $110 |
+| **Silver** | 1.25x | $125 |
+| **Gold** | 1.5x | $150 |
+| **Platinum** | 2.0x | $200 |
+
+<Callout type="success" emoji="💎">
+  Platinum tier users can effectively double their winnings on every successful bet!
+</Callout>
+
+## Payout Timeline
+
+<Steps>
+  <Step title="Market Closes" icon="1">
+    Trading stops at the predetermined time/date
+  </Step>
+  <Step title="Oracle Verification" icon="2">
+    Outcome is verified by designated oracle(s) (usually within minutes)
+  </Step>
+  <Step title="Resolution Confirmation" icon="3">
+    Smart contract confirms the winning outcome
+  </Step>
+  <Step title="Automatic Distribution" icon="4">
+    Winnings instantly sent to all winning shareholders
+  </Step>
+  <Step title="Wallet Credit" icon="5">
+    Funds appear in your wallet immediately
+  </Step>
+</Steps>
+
+## Payout Methods
+
+### Direct to Wallet
+- Winnings paid in the same currency you bet with
+- No withdrawal needed - funds go straight to your connected wallet
+- Available immediately for new bets or withdrawal
+
+### Compound Options
+<AccordionGroup>
+  <Accordion title="Auto-Reinvest" icon="rotate">
+    Set up automatic reinvestment of winnings into new markets (coming soon)
+  </Accordion>
+  <Accordion title="Convert to $PREDIQT" icon="arrows-rotate">
+    One-click conversion of SOL winnings to $PREDIQT for tier benefits
+  </Accordion>
+  <Accordion title="Stake Winnings" icon="lock">
+    Directly stake $PREDIQT winnings to earn APY without extra transactions
+  </Accordion>
+</AccordionGroup>
+
+## Special Payout Scenarios
+
+### Split Decisions
+
+Some markets may have special conditions:
+
+<Warning>
+  Always read the resolution criteria carefully. Some markets may have conditions for partial payouts or specific tie-breaking rules.
+</Warning>
+
+**Example:** "Will the game end in regulation?"
+- YES pays if game ends without overtime
+- NO pays if game goes to overtime
+- If game is cancelled: 50/50 split (each share worth $0.50)
+
+### Invalid Markets
+
+If a market cannot be resolved fairly:
+1. Market is marked invalid
+2. All shares are refunded at purchase price
+3. Fees are returned
+4. No profits or losses
+
+## Tax Considerations
+
+<Note>
+  Prediction market winnings may be taxable in your jurisdiction. Prediqt provides transaction history for tax reporting, but users are responsible for their own tax compliance.
+</Note>
+
+### Record Keeping
+
+Access your complete betting history:
+- All bets placed
+- Resolution outcomes
+- Profit/loss per market
+- Annual summaries
+- CSV export for tax software
+
+## Maximizing Payouts
+
+<CardGroup cols={2}>
+  <Card title="Buy Low" icon="chart-line-down">
+    Target shares priced under $0.50 for >100% ROI potential
+  </Card>
+  <Card title="Use $PREDIQT" icon="coin">
+    Tier multipliers can add 10-100% to your winnings
+  </Card>
+  <Card title="Volume Betting" icon="layer-group">
+    Spread bets across multiple markets to reduce variance
+  </Card>
+  <Card title="Early Exit" icon="door-open">
+    Sometimes selling at $0.90 beats waiting for $1.00
+  </Card>
+</CardGroup>
+
+## Payout Calculator
+
+Use this quick reference to calculate potential returns:
+
+<CodeGroup>
+```javascript ROI Calculator
+function calculatePayout(shares, purchasePrice, isWinner) {
+  const investment = shares * purchasePrice;
+  
+  if (isWinner) {
+    const payout = shares * 1.00;
+    const profit = payout - investment;
+    const roi = (profit / investment) * 100;
+    
+    return {
+      investment,
+      payout,
+      profit,
+      roi: roi.toFixed(1) + '%'
+    };
+  } else {
+    return {
+      investment,
+      payout: 0,
+      profit: -investment,
+      roi: '-100%'
+    };
+  }
+}
+```
+
+```python Quick Math
+# Minimum ROI based on purchase price
+purchase_prices = [0.10, 0.25, 0.50, 0.75, 0.90]
+for price in purchase_prices:
+    roi = ((1.00 - price) / price) * 100
+    print(f"Buy at ${price}: {roi:.0f}% ROI if win")
+
+# Output:
+# Buy at $0.10: 900% ROI if win
+# Buy at $0.25: 300% ROI if win
+# Buy at $0.50: 100% ROI if win
+# Buy at $0.75: 33% ROI if win
+# Buy at $0.90: 11% ROI if win
+```
+</CodeGroup>
+
+## Common Questions
+
+<AccordionGroup>
+  <Accordion title="When do I receive my payout?" icon="clock">
+    Immediately after market resolution. Most markets resolve within minutes of the event ending.
+  </Accordion>
+  <Accordion title="Can payouts fail?" icon="triangle-exclamation">
+    No. Smart contracts guarantee payouts. Once a market resolves, payment is automatic and unstoppable.
+  </Accordion>
+  <Accordion title="What about partial wins?" icon="chart-pie">
+    Standard markets are binary (win all or lose all). Special markets with different rules will clearly state this upfront.
+  </Accordion>
+  <Accordion title="Are there payout limits?" icon="gauge-high">
+    No limits. Whether you win $10 or $10,000, payouts process the same way.
+  </Accordion>
+</AccordionGroup>
+
+## Next Steps
+
+<CardGroup cols={3}>
+  <Card
+    title="View Live Markets"
+    icon="chart-mixed"
+    href="https://prediqtmarket.com"
+  >
+    Find profitable opportunities
+  </Card>
+  <Card
+    title="Payout History"
+    icon="clock-rotate-left"
+    href="https://prediqtmarket.com/history"
+  >
+    Check your past winnings
+  </Card>
+  <Card
+    title="Tax Guide"
+    icon="file-invoice-dollar"
+    href="/resources/tax-guide"
+  >
+    Understand tax implications
+  </Card>
+</CardGroup> 

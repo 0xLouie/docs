@@ -1,0 +1,253 @@
+---
+title: 'How to Place a Bet'
+description: 'Detailed guide to placing predictions on Prediqtmarket'
+icon: 'dice'
+---
+
+## Placing Your Prediction
+
+This guide provides a comprehensive walkthrough of placing bets on Prediqtmarket, from market selection to profit collection.
+
+<Note>
+  Before proceeding, ensure you have a funded Solana wallet connected to Prediqtmarket. See our [Getting Started](/using/getting-started) guide if you need help.
+</Note>
+
+## Types of Positions
+
+<CardGroup cols={2}>
+  <Card title="YES Position" icon="check" color="#299EFF">
+    Bet that the event WILL happen. If correct, each share pays $1.00
+  </Card>
+  <Card title="NO Position" icon="x" color="#299EFF">
+    Bet that the event WON'T happen. If correct, each share pays $1.00
+  </Card>
+</CardGroup>
+
+## Step-by-Step Betting Process
+
+<Steps>
+  <Step title="Select a Market" icon="1">
+    ### Finding the Right Market
+    
+    Browse markets using:
+    - **Search Bar**: Type keywords for specific events
+    - **Categories**: Filter by Politics, Sports, Crypto, etc.
+    - **Trending**: See most active markets
+    - **Closing Soon**: Markets about to resolve
+    
+    <Tip>
+      Look for markets with high liquidity (>$10,000) for better pricing and easier exits.
+    </Tip>
+  </Step>
+  
+  <Step title="Analyze Market Data" icon="2">
+    ### Understanding the Odds
+    
+    Check these key metrics:
+    
+    | Metric | What it Means |
+    |--------|---------------|
+    | **YES Price** | Current probability (e.g., $0.65 = 65%) |
+    | **Volume** | Total amount bet (indicates interest) |
+    | **Liquidity** | Available for instant trades |
+    | **Holders** | Number of unique bettors |
+    
+    <Warning>
+      Always read the "Resolution Criteria" carefully. This determines exactly how the market will be settled.
+    </Warning>
+  </Step>
+  
+  <Step title="Calculate Your Position" icon="3">
+    ### Position Sizing
+    
+    Use our built-in calculator or follow this formula:
+    
+    ```
+    Potential Profit = (Number of Shares × $1.00) - Total Cost
+    ROI = (Potential Profit / Total Cost) × 100%
+    ```
+    
+    **Example**: Buying 100 YES shares at $0.60
+    - Cost: 100 × $0.60 = $60
+    - Payout if correct: 100 × $1.00 = $100
+    - Profit: $100 - $60 = $40 (66.7% ROI)
+  </Step>
+  
+  <Step title="Execute the Trade" icon="4">
+    ### Placing Your Order
+    
+    1. Click "Buy YES" or "Buy NO"
+    2. Enter amount in SOL or $PREDIQT
+    3. Review the order details:
+       - Share quantity
+       - Average price
+       - Total cost with fees
+       - Slippage tolerance
+    4. Click "Place Order"
+    5. Approve transaction in wallet
+    
+    <Note>
+      Large orders may experience slippage. Use limit orders for better price control on big trades.
+    </Note>
+  </Step>
+  
+  <Step title="Monitor Your Position" icon="5">
+    ### After Placing Your Bet
+    
+    Your position appears in "My Bets" showing:
+    - Current value
+    - Unrealized P&L
+    - Share quantity
+    - Average entry price
+    
+    You can sell anytime before resolution at market price.
+  </Step>
+</Steps>
+
+## Advanced Order Types
+
+<Tabs>
+  <Tab title="Market Order">
+    **Instant execution at current price**
+    - Pros: Immediate fill
+    - Cons: May experience slippage
+    - Best for: Small orders, volatile markets
+  </Tab>
+  <Tab title="Limit Order">
+    **Set your maximum price**
+    - Pros: Price protection
+    - Cons: May not fill immediately
+    - Best for: Large orders, patient traders
+  </Tab>
+</Tabs>
+
+## Trading Strategies
+
+<AccordionGroup>
+  <Accordion title="Information Trading" icon="newspaper">
+    Buy/sell based on news or information others haven't processed yet. Speed matters in fast-moving markets.
+  </Accordion>
+  <Accordion title="Arbitrage" icon="scale-balanced">
+    Look for price discrepancies where YES + NO prices don't equal $1.00. Buy the underpriced side.
+  </Accordion>
+  <Accordion title="Momentum Trading" icon="chart-line-up">
+    Follow market trends. Markets often overshoot in both directions before settling at fair value.
+  </Accordion>
+  <Accordion title="Contrarian Betting" icon="lightbulb">
+    Bet against the crowd when you believe the market is wrong. Higher risk but potentially higher reward.
+  </Accordion>
+</AccordionGroup>
+
+## Managing Risk
+
+### Position Sizing Guidelines
+
+| Risk Level | % of Portfolio | Suitable For |
+|------------|----------------|--------------|
+| **Conservative** | 1-2% | New users, uncertain markets |
+| **Moderate** | 3-5% | Confident predictions |
+| **Aggressive** | 5-10% | High conviction, experienced traders |
+
+### Stop-Loss Strategies
+
+<CardGroup cols={2}>
+  <Card title="Mental Stop-Loss" icon="brain">
+    Decide exit price beforehand and stick to it
+  </Card>
+  <Card title="Time-Based Exit" icon="clock">
+    Sell if no movement within your timeframe
+  </Card>
+</CardGroup>
+
+## Common Mistakes to Avoid
+
+<Warning>
+  1. **Betting more than you can afford to lose**
+  2. **Ignoring resolution criteria details**
+  3. **FOMO buying at market peaks**
+  4. **Not considering liquidity for exits**
+  5. **Emotional trading after losses**
+</Warning>
+
+## Example Trade Walkthrough
+
+Let's walk through a real example:
+
+<CodeGroup>
+```text Market Details
+Market: "Will Bitcoin reach $50,000 by Dec 31?"
+Current YES price: $0.35 (35% probability)
+Your analysis: 60% chance based on trends
+Decision: Buy YES shares
+```
+
+```text Order Calculation
+Investment: 1 SOL (~$50)
+YES shares received: 142.86 shares
+Cost per share: $0.35
+Break-even: Market resolves YES
+Max profit: $92.86 (185% ROI)
+Max loss: $50 (100%)
+```
+
+```text Risk Assessment
+Portfolio size: 10 SOL
+Position size: 1 SOL (10%)
+Risk level: Moderate
+Exit plan: Sell at $0.70 or if BTC trends change
+```
+</CodeGroup>
+
+## After Resolution
+
+<Steps>
+  <Step title="Automatic Settlement">
+    Smart contracts automatically process payouts when markets resolve
+  </Step>
+  <Step title="Instant Payout">
+    Winning shares convert to $1.00 each, paid in your betting currency
+  </Step>
+  <Step title="View History">
+    Check "Resolved Bets" to see your results and learn from outcomes
+  </Step>
+</Steps>
+
+## Pro Tips
+
+<Tip>
+  📊 **Track Your Performance**: Keep a betting journal to identify winning strategies
+
+  ⏰ **Set Alerts**: Use price alerts for entry/exit points on major positions
+
+  🤝 **Join the Community**: Discuss strategies and get insights in our Discord
+
+  📚 **Study Resolved Markets**: Learn from historical price movements and outcomes
+
+  💎 **Use $PREDIQT**: Save on fees and earn additional rewards
+</Tip>
+
+## Next Steps
+
+<CardGroup cols={3}>
+  <Card
+    title="Compare Currencies"
+    icon="arrows-left-right"
+    href="/using/sol-vs-prediqt"
+  >
+    SOL vs $PREDIQT benefits
+  </Card>
+  <Card
+    title="Understand Payouts"
+    icon="money-bill-wave"
+    href="/using/payouts"
+  >
+    How winnings are calculated
+  </Card>
+  <Card
+    title="View Markets"
+    icon="chart-mixed"
+    href="https://prediqtmarket.com"
+  >
+    Start betting now
+  </Card>
+</CardGroup> 

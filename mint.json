@@ -1,0 +1,93 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "name": "Prediqt Documentation",
+  "theme": "venus",
+  "favicon": "/favicon.svg",
+  "colors": {
+    "primary": "#299EFF",
+    "light": "#5AB3FF",
+    "dark": "#1A7ACC",
+    "background": {
+      "dark": "#0F0F11",
+      "light": "#FFFFFF"
+    }
+  },
+  "topbarCtaButton": {
+    "name": "Launch App",
+    "url": "https://prediqtmarket.com"
+  },
+  "topbarLinks": [
+    {
+      "name": "Community",
+      "url": "https://discord.gg/prediqt"
+    }
+  ],
+  "tabs": [
+    {
+      "name": "Documentation",
+      "url": "/"
+    },
+    {
+      "name": "Token",
+      "url": "/token"
+    },
+    {
+      "name": "Ecosystem",
+      "url": "/ecosystem"
+    }
+  ],
+  "navigation": [
+    {
+      "group": "General",
+      "pages": [
+        "introduction",
+        "how-prediqt-works",
+        "core-values"
+      ]
+    },
+    {
+      "group": "The $PREDIQT Token",
+      "pages": [
+        "token/about-prediqt"
+      ]
+    },
+    {
+      "group": "Using Prediqtmarket",
+      "pages": [
+        "using/getting-started",
+        "using/how-to-place-bet",
+        "using/sol-vs-prediqt",
+        "using/payouts"
+      ]
+    },
+    {
+      "group": "Ecosystem & Growth",
+      "pages": [
+        "ecosystem/developer-fee-model",
+        "ecosystem/flywheel-explained"
+      ]
+    },
+    {
+      "group": "Roadmap",
+      "pages": [
+        "roadmap/phase-1",
+        "roadmap/phase-2",
+        "roadmap/phase-3"
+      ]
+    }
+  ],
+  "footerSocials": {
+    "twitter": "https://twitter.com/prediqt",
+    "discord": "https://discord.gg/prediqt",
+    "github": "https://github.com/prediqt"
+  },
+  "analytics": {
+    "gtm": {
+      "tagId": "GTM-XXXXXX"
+    }
+  },
+  "modeToggle": {
+    "default": "dark",
+    "isHidden": false
+  }
+}
