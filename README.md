@@ -51,9 +51,9 @@ To contribute to the documentation:
 
 ## 🔗 Links
 
-- **Website:** [prediqtmarket.com](https://prediqtmarket.com)
-- **Discord:** [discord.gg/prediqt](https://discord.gg/prediqt)
-- **Twitter:** [@prediqt](https://twitter.com/prediqt)
+- **Website:** [prediqt.market](https://prediqt.market)
+- **Discord:** [discord.gg/prediqtmarket](https://discord.gg/prediqtmarket)
+- **Twitter:** [@prediqtapp](https://x.com/prediqtapp)
 
 ## 📄 License
 

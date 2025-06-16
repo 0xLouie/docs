@@ -14,12 +14,12 @@
   },
   "topbarCtaButton": {
     "name": "Launch App",
-    "url": "https://prediqtmarket.com"
+    "url": "https://prediqt.market"
   },
   "topbarLinks": [
     {
       "name": "Community",
-      "url": "https://discord.gg/prediqt"
+      "url": "https://discord.gg/prediqtmarket"
     }
   ],
   "tabs": [
@@ -77,8 +77,8 @@
     }
   ],
   "footerSocials": {
-    "twitter": "https://twitter.com/prediqt",
-    "discord": "https://discord.gg/prediqt",
+    "twitter": "https://x.com/prediqtapp",
+    "discord": "https://discord.gg/prediqtmarket",
     "github": "https://github.com/prediqt"
   },
   "analytics": {
