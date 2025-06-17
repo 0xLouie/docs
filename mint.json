@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "name": "Prediqt",
-  "theme": "mint",
+  "theme": "venus",
   "favicon": "/favicon.svg",
   "colors": {
     "primary": "#299EFF",
