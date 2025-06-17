@@ -32,14 +32,6 @@
   ],
   "navigation": [
     {
-      "group": "Resources",
-      "pages": [
-        "resources/prediqt-app",
-        "resources/discord-community",
-        "resources/twitter"
-      ]
-    },
-    {
       "group": "Get Started",
       "pages": [
         "what-is-prediqt",
@@ -66,6 +58,14 @@
         "faqs/is-your-money-secure",
         "faqs/why-cryptocurrency",
         "faqs/what-are-prediction-markets"
+      ]
+    },
+    {
+      "group": "Resources",
+      "pages": [
+        "resources/prediqt-app",
+        "resources/discord-community",
+        "resources/twitter"
       ]
     }
   ],
