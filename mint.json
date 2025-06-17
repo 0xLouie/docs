@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "name": "Prediqt",
-  "theme": "quill",
+  "theme": "mint",
   "favicon": "/favicon.svg",
   "colors": {
     "primary": "#299EFF",
@@ -53,7 +53,6 @@
       "pages": [
         "faqs/can-i-exit-early",
         "faqs/does-prediqt-have-token",
-        "faqs/api-access",
         "faqs/prediqt-vs-polling",
         "faqs/contact-support",
         "faqs/is-your-money-secure",
