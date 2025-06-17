@@ -32,20 +32,20 @@
   ],
   "navigation": [
     {
-      "group": "Resources",
-      "pages": [
-        "resources/prediqt-app",
-        "resources/discord-community",
-        "resources/twitter"
-      ]
-    },
-    {
       "group": "Get Started",
       "pages": [
         "what-is-prediqt",
         "how-to-sign-up",
         "how-to-fund-account",
         "placing-first-trade"
+      ]
+    },
+    {
+      "group": "Resources",
+      "pages": [
+        "resources/prediqt-app",
+        "resources/discord-community",
+        "resources/twitter"
       ]
     },
     {
