@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "name": "Prediqt",
-  "theme": "venus",
+  "theme": "mint",
   "favicon": "/favicon.svg",
   "colors": {
     "primary": "#299EFF",
@@ -31,6 +31,26 @@
     }
   ],
   "navigation": [
+    {
+      "group": "Resources",
+      "pages": [
+        {
+          "name": "Prediqt App",
+          "icon": "house",
+          "url": "https://prediqt.market"
+        },
+        {
+          "name": "Discord Community",
+          "icon": "discord",
+          "url": "https://discord.gg/prediqt"
+        },
+        {
+          "name": "Twitter",
+          "icon": "twitter",
+          "url": "https://x.com/prediqtapp"
+        }
+      ]
+    },
     {
       "group": "Get Started",
       "pages": [
