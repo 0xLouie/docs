@@ -1,0 +1,104 @@
+---
+title: 'Understanding Price Calculation'
+description: 'How market prices reflect probabilities on Prediqt'
+---
+
+# Understanding Price Calculation
+
+Prices on Prediqt directly represent the market's collective assessment of probability. Here's how it works.
+
+## The Basics
+
+- Shares trade between 0 and 1 USDC
+- Price = Implied probability
+- 0.65 USDC = 65% chance
+- Winning shares pay out 1 USDC
+- Losing shares become worthless
+
+## Price Discovery
+
+Market prices are determined by:
+
+### Supply and Demand
+- More buyers → Price increases
+- More sellers → Price decreases
+- Equilibrium = Market probability
+
+### Order Book Mechanics
+1. **Limit orders**: Set your desired price
+2. **Market orders**: Accept current best price
+3. **Spread**: Difference between buy/sell prices
+4. **Depth**: Amount available at each price
+
+## Automated Market Maker (AMM)
+
+Prediqt uses a hybrid system:
+- AMM provides constant liquidity
+- Order book for precise pricing
+- Best of both worlds
+
+### AMM Formula
+```
+Price = Shares_Outcome / Total_Shares
+```
+
+### Benefits
+- Always liquid
+- No waiting for counterparty
+- Reduced slippage
+- Fair pricing
+
+## Real-Time Updates
+
+Prices change based on:
+- New trades executed
+- Orders placed/cancelled
+- External news/events
+- Market sentiment shifts
+
+## Example Calculation
+
+**Market**: "Will Team A win the championship?"
+
+Initial state:
+- YES shares: 4,000
+- NO shares: 6,000
+- YES price: 0.40 (40%)
+
+After big trade:
+- Buy 1,000 YES shares
+- New YES total: 5,000
+- New price: 0.50 (50%)
+
+## Price Impact
+
+Large trades affect prices:
+- Small trade (< $100): Minimal impact
+- Medium trade ($100-$1,000): 1-3% move
+- Large trade (> $1,000): 3-10% move
+
+## Arbitrage Opportunities
+
+Price differences create opportunities:
+- Between related markets
+- YES + NO should = 1.00
+- Cross-platform differences
+- Time-based arbitrage
+
+## Important Concepts
+
+### Slippage
+The difference between expected and executed price due to:
+- Market movement
+- Order size
+- Available liquidity
+
+### Liquidity Pools
+- Deeper pools = Stable prices
+- Shallow pools = Volatile prices
+- Check depth before large trades
+
+### Price Limits
+- Minimum: 0.01 (1%)
+- Maximum: 0.99 (99%)
+- Protects against manipulation 

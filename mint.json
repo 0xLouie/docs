@@ -22,67 +22,49 @@
   },
   "topbarLinks": [
     {
-      "name": "Community",
+      "name": "Discord Community",
       "url": "https://discord.gg/prediqtmarket"
-    }
-  ],
-  "tabs": [
-    {
-      "name": "Documentation",
-      "url": "/"
     },
     {
-      "name": "Token",
-      "url": "/token"
-    },
-    {
-      "name": "Ecosystem",
-      "url": "/ecosystem"
+      "name": "Twitter",
+      "url": "https://x.com/prediqtapp"
     }
   ],
   "navigation": [
     {
-      "group": "General",
+      "group": "Get Started",
       "pages": [
-        "introduction",
-        "how-prediqt-works",
-        "core-values"
+        "what-is-prediqt",
+        "how-to-sign-up",
+        "how-to-fund-account",
+        "placing-first-trade"
       ]
     },
     {
-      "group": "The $PREDIQT Token",
+      "group": "Markets",
       "pages": [
-        "token/about-prediqt"
+        "markets/how-markets-are-created",
+        "markets/understanding-price-calculation",
+        "markets/how-markets-get-resolved"
       ]
     },
     {
-      "group": "Using Prediqtmarket",
+      "group": "FAQs",
       "pages": [
-        "using/getting-started",
-        "using/how-to-place-bet",
-        "using/sol-vs-prediqt",
-        "using/payouts"
-      ]
-    },
-    {
-      "group": "Ecosystem & Growth",
-      "pages": [
-        "ecosystem/developer-fee-model",
-        "ecosystem/flywheel-explained"
-      ]
-    },
-    {
-      "group": "Roadmap",
-      "pages": [
-        "roadmap/phase-1",
-        "roadmap/phase-2",
-        "roadmap/phase-3"
+        "faqs/can-i-exit-early",
+        "faqs/does-prediqt-have-token",
+        "faqs/api-access",
+        "faqs/prediqt-vs-polling",
+        "faqs/contact-support",
+        "faqs/is-your-money-secure",
+        "faqs/why-cryptocurrency",
+        "faqs/what-are-prediction-markets"
       ]
     }
   ],
   "footerSocials": {
     "twitter": "https://x.com/prediqtapp",
-    "discord": "https://discord.gg/prediqtmarket",
+    "discord": "https://discord.gg/prediqt",
     "github": "https://github.com/prediqt"
   },
   "analytics": {
