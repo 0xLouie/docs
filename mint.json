@@ -23,7 +23,7 @@
   "topbarLinks": [
     {
       "name": "Discord Community",
-      "url": "https://discord.gg/prediqtmarket"
+      "url": "https://discord.gg/prediqt"
     },
     {
       "name": "Twitter",
@@ -63,8 +63,7 @@
   ],
   "footerSocials": {
     "twitter": "https://x.com/prediqtapp",
-    "discord": "https://discord.gg/prediqt",
-    "github": "https://github.com/prediqt"
+    "discord": "https://discord.gg/prediqt"
   },
   "analytics": {
     "gtm": {

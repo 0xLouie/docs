@@ -52,7 +52,7 @@ To contribute to the documentation:
 ## 🔗 Links
 
 - **Website:** [prediqt.market](https://prediqt.market)
-- **Discord:** [discord.gg/prediqtmarket](https://discord.gg/prediqtmarket)
+- **Discord:** [discord.gg/prediqt](https://discord.gg/prediqt)
 - **Twitter:** [@prediqtapp](https://x.com/prediqtapp)
 
 ## 📄 License
