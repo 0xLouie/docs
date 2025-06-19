@@ -1,19 +1,43 @@
 ---
-title: 'Understanding Price Calculation'
-description: 'How market prices reflect probabilities on Prediqt'
+title: 'Understanding Price & Payouts'
+description: 'How market prices and payouts work on Prediqt'
 ---
 
-# Understanding Price Calculation
+# Understanding Price & Payouts
 
-Prices on Prediqt directly represent the market's collective assessment of probability. Here's how it works.
+Prices on Prediqt markets reflect the crowd's wisdom about the probability of future events. Here's a breakdown of how it works.
 
-## The Basics
+## How Prices Work
 
-- Shares trade between 0 and 1 USDC
-- Price = Implied probability
-- 0.65 USDC = 65% chance
-- Winning shares pay out 1 USDC
-- Losing shares become worthless
+The price of a share in a market represents the estimated probability of that outcome occurring.
+
+- Share prices range from 0.01 to 0.99 USDC.
+- A price of 0.65 USDC for a "Yes" share implies a 65% chance that the "Yes" outcome will occur.
+- As users buy and sell shares, the prices change to reflect the market's collective belief.
+
+If you buy shares for an outcome that comes true, each share you hold will be worth 1 USDC at resolution. If the outcome does not come true, those shares become worthless.
+
+## Buying and Selling Shares
+
+You can buy "Yes" or "No" shares for any active market. You can also sell your shares at any time before the market expires.
+
+When you sell your shares, you are selling them back to the market at the current price. This allows you to lock in profits if the price has moved in your favor, or cut your losses if it has moved against you.
+
+## Market Fees
+
+Prediqt charges a 1% fee when you sell your shares / at payout. This fee is deducted from the proceeds of your sale. There are no fees for buying shares or for receiving payouts from a resolved market.
+
+## How Payouts Are Calculated
+
+When a market resolves, winners receive a payout from the total pool of money from both "Yes" and "No" bets.
+
+For example, if you bought "Yes" shares at 0.40 USDC and the "Yes" outcome is correct, each of your shares is now worth 1 USDC. Your profit is 0.60 USDC per share.
+
+## Liquidity
+
+Prediqt uses an Automated Market Maker (AMM) to ensure that you can always buy or sell shares, even if there isn't another user immediately available to take the other side of your trade. The AMM provides liquidity to the market, but be aware that large trades can still affect the price.
+
+If you are the only one betting on an outcome, you will be trading against the AMM. Because of fees, it is possible to lose money even if you are on the winning side if there is very little opposing liquidity. This is a rare scenario in active markets.
 
 ## Price Discovery
 
@@ -84,21 +108,3 @@ Price differences create opportunities:
 - YES + NO should = 1.00
 - Cross-platform differences
 - Time-based arbitrage
-
-## Important Concepts
-
-### Slippage
-The difference between expected and executed price due to:
-- Market movement
-- Order size
-- Available liquidity
-
-### Liquidity Pools
-- Deeper pools = Stable prices
-- Shallow pools = Volatile prices
-- Check depth before large trades
-
-### Price Limits
-- Minimum: 0.01 (1%)
-- Maximum: 0.99 (99%)
-- Protects against manipulation 

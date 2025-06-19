@@ -5,136 +5,38 @@ description: 'Understanding the market resolution process on Prediqt'
 
 # How Markets Get Resolved
 
-Market resolution is a critical part of the prediction market lifecycle. Here's how Prediqt ensures fair and accurate outcomes.
-
-## Resolution Timeline
-
-1. **Market closes**: No new trades allowed
-2. **Outcome determination**: 1-48 hours typically
-3. **Resolution posted**: Official result declared
-4. **Settlement**: Automatic payout to winners
-
-## Resolution Sources
-
-### Primary Sources
-Markets specify their resolution source upfront:
-- **Official announcements**: Government agencies, companies
-- **Verified results**: Sports leagues, election boards
-- **Data providers**: Bloomberg, Reuters, AP
-- **On-chain data**: Smart contract outcomes
-
-### Backup Sources
-If primary source fails:
-- Pre-designated alternates
-- Community consensus
-- Prediqt committee decision
-- Market cancellation (rare)
+Market resolution is a critical part of the prediction market lifecycle. On Prediqt, the process is handled by our team to ensure fair and accurate outcomes.
 
 ## The Resolution Process
 
-### Step 1: Information Gathering
-- Automated data feeds check sources
-- Manual verification for complex outcomes
-- Cross-reference multiple sources
-- Document all evidence
+1.  **Market Expiration**: When a market's end date is reached, trading is automatically halted. The market will no longer be displayed on the home page and awaits resolution.
+2.  **Outcome Determination**: The Prediqt team determines the outcome based on the pre-defined resolution source for the market.
+3.  **Resolution**: The team resolves the market via the admin dashboard, and the official result is posted.
+4.  **Settlement**: Payouts are automatically distributed to users with winning shares.
 
-### Step 2: Initial Determination
-- Resolution team reviews evidence
-- Apply market rules strictly
-- Consider edge cases
-- Propose resolution
+## Resolution Sources
 
-### Step 3: Review Period
-- 2-hour window for objections
-- High-value markets get extended review
-- Community can flag issues
-- Additional evidence considered
+To ensure objectivity, every market has a resolution source specified at creation. The Prediqt team uses these sources to determine the outcome. These can include:
+- **Official announcements**: Government agencies, companies
+- **Verified results**: Sports leagues, election boards
+- **Data providers**: Reputable news and data agencies
+- **On-chain data**: Smart contract outcomes
 
-### Step 4: Final Resolution
-- Official outcome posted
-- Smart contract executes
-- Payouts distributed
-- Market archived
+If a primary source is unavailable or unclear, the team will use pre-designated backup sources to make a final determination.
 
-## Dispute Resolution
+## Payouts
 
-If users disagree with an outcome:
-
-### Level 1: Quick Review
-- Flag issue within 2 hours
-- Provide contradicting evidence
-- Fast-track reassessment
-- Decision within 6 hours
-
-### Level 2: Formal Dispute
-- Submit detailed challenge
-- Stake PREDIQT tokens
-- Community jury reviews
-- Binding decision
-
-### Level 3: Emergency Committee
-- For unprecedented situations
-- Multi-sig governance
-- Transparent process
-- Final authority
+Once a market is resolved:
+1.  Losing shares become worthless.
+2.  Your account will be automatically credited with the winnings.
+3. You can claim your payout via the dashboard.
+4.  You can view the transaction record in your wallet history.
 
 ## Special Situations
 
 ### Ambiguous Outcomes
-When reality doesn't match market terms:
-- Strict interpretation of rules
-- Original intent considered
-- Precedent from similar markets
-- Fair resolution prioritized
+In rare cases where the outcome is ambiguous, the Prediqt team will make a determination based on a strict interpretation of the market rules and the original intent of the market question.
 
 ### Cancelled Markets
-Markets may be cancelled if:
-- Question becomes invalid
-- No clear resolution possible
-- Technical errors discovered
-- All traders refunded
+A market may be cancelled by the team if the question becomes invalid or if a clear resolution is impossible. In this event, all funds traded in the market are returned to the users.
 
-### Split Resolutions
-For complex scenarios:
-- Partial payouts possible
-- Proportional distribution
-- Based on outcome probability
-- Rare but fair solution
-
-## Payout Mechanics
-
-Once resolved:
-1. Winning shares convert to 1 USDC each
-2. Losing shares become worthless
-3. Automatic distribution begins
-4. Funds in wallet within minutes
-5. Transaction record provided
-
-## Resolution Examples
-
-### Clear Resolution
-**Market**: "Will the Lakers win Game 7?"
-- **Source**: NBA official website
-- **Result**: Lakers win 110-95
-- **Resolution**: YES pays out
-
-### Edge Case
-**Market**: "Will inflation exceed 5% in Q1?"
-- **Source**: Bureau of Labor Statistics
-- **Result**: Exactly 5.0%
-- **Resolution**: NO (must exceed, not equal)
-
-### Disputed Resolution
-**Market**: "Will Company X announce layoffs?"
-- **Initial**: NO based on press release
-- **Dispute**: Internal memo leaked
-- **Review**: Memo verified as authentic
-- **Final**: Reversed to YES
-
-## Best Practices
-
-- Read resolution criteria carefully
-- Understand edge cases
-- Keep evidence of your position
-- Monitor market announcements
-- Act quickly if disputing 
